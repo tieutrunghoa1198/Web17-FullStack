@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+#header {
+  background: none repeat scroll 0 0 black;
+  border-bottom: 7px solid #00704a;
+  color: #ffffff;
+  font-family: "Droid Sans",arial,sans-serif;
+  margin: 0 auto;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 222;
+}
+
+img {
+	display: block;
+}
+
+a {
+	display: block;
+}
+
+/* unvisited link */
+a:link {
+	color: white;
+}
+
+/* visited link */
+a:visited {
+	color: white;
+}
+
+/* mouse over link */
+a:hover {
+	color: #00704a;
+}
+
+/* selected link */
+a:active {
+	color: white;
+}
+
+#into-header {
+	margin-left: 10%;
+	margin-right: 20%;
+	
+}
+
+#header-contact {
+	width: 100%;
+	display: block;
+	list-style-type: none;
+	float: left;
+	
+	margin-left: 7%;
+}
+
+#header-logo {
+	  max-width: 200px;
+	}
+
+#logo{
+	width: 20%;
+	display: block;
+	padding-left: 100px;
+	float: right;
+}
+
+#navi{
+	width: 80%;
+	display: block;
+	float: left;
+}
+
+#navi ul li{
+	display: block;
+	padding-top: 20px; 
+	list-style-type: none;
+	float: left;
+	margin: 20px;
+	text-align: center;
+}
+
+#navi ul li a{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	width: 100%;
+	display: block;
+	line-height: 28px;
+	text-align: center;
+	alignment-adjust:middle;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin-top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+	
+}
+
+/* Position the "next button" to the right */
+.prev {
+	left: 0;
+	border-radius: 0 7px 7px 0;
+}
+.next {
+  right: 0;
+  border-radius: 7px 0 0 7px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+#footer {
+	border-top: 5px solid #00704a;
+	clear: both;
+	font-family: 'Droid Serif',serif;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footer-content-wrapper {
+	background: #e6e6e6;
+	overflow: hidden;
+	padding: 10px 0 10px;
+}
+
+#footer-content {
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow:hidden;
+}
+
+#footer-left {
+	float: left;
+}
+
+#footer-right {
+	float: right;
+}
+
+#footer-nav a {
+	color: #231f20;
+	display: block;
+	font-family: 'Droid Sans',Arial,sans-serif;
+	font-size: 16px;
+	padding: 0 0 0 50px;
+	text-decoration: none;
+	transition: color 100ms linear 0s;
+}
+
+#footer-nav li a:hover{
+	color: #00704a;
+}
+
+#font-size {
+	font-size: 14px;
+}
+
+#new-navi{
+	list-style: none;
+  	position: relative;
+  	text-align:right;
+}
+
+#new-navi li{
+	margin: 5px;
+	display:inline-block;
+}
+
+p.serif {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+#content-container {
+	height: 500px;
+	padding: 0 25px 0 25px;
+	margin: 0 200px 0 200px;
+}
+
+#body-content {
+	padding: 25px 0 25px 0;
+}
+
+#content-left {
+	padding: 0 20px 0 20px;
+	float: left;
+	width: 50%;
+}
+#content-right {
+	padding: 0 20px 0 20px;
+	float: right;
+	width: 50%;
+}
+.btn-link {
+	background-color: black;
+	color: white;
+}
+
+#link-newsletter {
+	color: #00704a;
+	text-decoration: none;
+}
+
+#body a{
+	color: #00704a;
+}

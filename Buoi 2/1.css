@@ -1,0 +1,47 @@
+img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-right: 100px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+ul li {
+    /* child selector  */
+}
+
+ul>li {
+    /* direct child */
+}
+
+.car, .bike {
+    
+    /* and selector
+    padding day le trong 
+    margin day le ngoai */
+}
+
+p {
+    color: #FF6347;
+}
+
+/* inline: 1 dòng 
+    block: 1 khối
+    none:*/
+
+.image {
+    background-image: url(IMG_5503.jpg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image_holder {
+    height: 300px;
+    widows: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
