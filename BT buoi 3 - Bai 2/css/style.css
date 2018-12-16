@@ -1,0 +1,27 @@
+.header {
+    background-color: #0000ff;
+}
+
+.nav {
+    text-align: center;
+    background-color: #800080;
+}
+
+.main {
+    background-color: #ffd700;
+    width:60%;
+    float:left;
+}
+
+.aside {
+    display: block;
+    background-color: #808080;
+    width:40%;
+    float:left; 
+}
+
+
+.footer {
+    background-color: #00ffff;
+    clear: both;
+}
