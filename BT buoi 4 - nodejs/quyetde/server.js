@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 //request GET => httt://localhost:6969/
 
-app.use(express.static('../quyetde/Project'));
+app.use(express.static('../quyetde/CV'));
 
 app.get('/', (req, resp) => {
     // resp.send('chao ba con');
