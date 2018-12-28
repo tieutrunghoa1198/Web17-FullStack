@@ -24,6 +24,7 @@
 }
 
 span:hover{
+    cursor: pointer;
     background: #9CD08F;
     color: #ffffff;
 }

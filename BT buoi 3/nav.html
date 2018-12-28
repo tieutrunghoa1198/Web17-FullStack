@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <span>Item 1
+            <nav class="menu sub-menu">
+                <span>Item 1</span>
+                <span>Item 2
+                    <nav class="menu sub-menu">
+                        <span>Item 1
+                            <nav class="menu sub-menu">
+                                <span>Item 1</span>
+                                <span>Item 2</span>
+                                <span>Item 3</span>
+                                <span>Item 4</span>
+                            </nav>
+                        </span>
+                        <span>Item 2</span>
+                        <span>Item 3
+                            <nav class="menu sub-menu">
+                                <span>Item 1</span>
+                                <span>Item 2</span>
+                                <span>Item 3</span>
+                                <span>Item 4</span>
+                            </nav>
+                        </span>
+                        <span>Item 4</span>
+                    </nav>
+                </span>
+                <span>Item 3</span>
+                <span>Item 4</span>
+            </nav>
+        </span>
+        <span>Item 2
+            <nav class="menu sub-menu">
+                <span>Item 1</span>
+                <span>Item 2</span>
+                <span>Item 3</span>
+                <span>Item 4</span>
+            </nav>
+        </span>
+        <span>Item 3
+            <nav class="menu sub-menu">
+                <span>Item 1</span>
+                <span>Item 2</span>
+                <span>Item 3</span>
+                <span>Item 4
+                    <nav class="menu sub-menu">
+                        <span>Item 1</span>
+                        <span>Item 2</span>
+                        <span>Item 3</span>
+                        <span>Item 4
+                            <nav class="menu sub-menu">
+                                <span>Item 1</span>
+                                <span>Item 2</span>
+                                <span>Item 3</span>
+                                <span>Item 4</span>
+                            </nav>
+                        </span>
+                    </nav>
+                </span>
+            </nav>
+        </span>
+        <span>Item 4
+            <nav class="menu sub-menu">
+                <span>Item 1
+                    <nav class="menu sub-menu">
+                        <span>Item 1</span>
+                        <span>Item 2</span>
+                        <span>Item 3</span>
+                        <span>Item 4</span>
+                    </nav>
+                </span>
+                <span>Item 2</span>
+                <span>Item 3
+                    <nav class="menu sub-menu">
+                        <span>Item 1</span>
+                        <span>Item 2</span>
+                        <span>Item 3</span>
+                        <span>Item 4</span>
+                    </nav>
+                </span>
+                <span>Item 4</span>
+            </nav>
+        </span>
+    </nav>
+    <br>
+    <textarea name="" id="content" cols="30" rows="10"></textarea>
+    <div>Còn <span id="count">200</span>/200 ký tự</div>
+    <script>
+        document.getElementById("content").addEventListener("input", function() {
+            document.getElementById("count").innerText = 200 - document.getElementById("content").value.length;
+        })
+    </script>
+</body>
+
+</html>
