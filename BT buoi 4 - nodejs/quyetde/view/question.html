@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quyet de</title>
+</head>
+<body>
+    <h1 id="content">Question Content</h1>
+    <div>Total vote: <span id="total"></span></div>
+    <div>Yes: <span id="yes"></span>%</div>
+    <div>No: <span id="no"></span>%</div>
+    <button><a href="/">See another question</a></button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        const questionId = window.location.pathname.replace('/question/', '');
+        $.ajax({
+            type: 'GET',
+            url: '/api/question/' + questionId,
+            success: function(data) {
+                console.log(data.question);
+                const { question } = data;// const question = data.question;
+                const total = question.yes + question.no;
+                $('#content').text(question.content);
+                $('#total').text(total);
+                $('#yes').text((question.yes*100/total).toFixed(2));
+                $('#no').text((question.no*100/total).toFixed(2));
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        })
+    </script>
+</body>
+</html>
