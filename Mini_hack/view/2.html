@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../public/style1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+        <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-0">ScoreKeeper</h1>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name of Player</th>
+                    <th id="name0" scope="col"></th>
+                    <th id="name1" scope="col"></th>
+                    <th id="name2" scope="col"></th>
+                    <th id="name3" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr style="background-color:#BF1363">
+                    <th scope="row" class="score-color">Sum of socre (<span id="total-score"></span>)</th>
+                    <td id="total-player-0"></td>
+                    <td id="total-player-1"></td>
+                    <td id="total-player-2"></td>
+                    <td id="total-player-3"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Round 1</th>
+                    <td><input id="scoreInput_0_0" type="number" class="form-control mb-3" ></td>
+                    <td><input id="scoreInput_0_1" type="number" class="form-control mb-3" ></td>
+                    <td><input id="scoreInput_0_2" type="number" class="form-control mb-3" ></td>
+                    <td><input id="scoreInput_0_3" type="number" class="form-control mb-3" ></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-center">
+            <button type="submit" id="button">ADD ROUND</button>
+        </div>
+    </div>
+    <script src="../public/main.js"></script>
+</body>
+</html>

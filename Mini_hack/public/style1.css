@@ -1,0 +1,27 @@
+body {
+    padding-top: 5%;
+}
+h1 {
+    border-bottom: 1px solid #BF1363;
+}
+#button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #BF1363;
+    color: #FBFEF9;
+}
+
+input[type] {
+    border: 1px solid #BF1363;
+}
+.score-color {
+    color: #FBFEF9;
+}
+
+.button-center {
+    text-align: center;
+}
+
+td {
+    color: #FBFEF9;
+}
