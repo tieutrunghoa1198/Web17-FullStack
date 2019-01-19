@@ -59,17 +59,19 @@ $(document).ready(function() {
                 data_global = data;
                 db = DB;
                 round = data[0].score.length;
-                // if there are more than 1 round and data haven't been loaded yet 
-                if(data[0].score.length > 0 && dataLoaded == false){
+                // if data haven't been loaded yet 
+                if(dataLoaded == false){
                     for (let i = 1; i < data[0].score.length; i++){
                         append(i+1);
                     }
                     display(data);
                     dataLoaded = true;
+                    console.log(1);
                 }
                 // if data have been loaded
                 else if(dataLoaded){
                     display(data);
+                    console.log(2);
                 }
             },
             error: function(err) {
