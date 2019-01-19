@@ -58,10 +58,14 @@ $(document).ready(function() {
                 let data = DB.score.player;
                 data_global = data;
                 db = DB;
-                round = data[0].score.length;
+                let arr = [];
+                for (let i = 0; i < data.length; i++){
+                    arr.push(data[i].score.length);
+                }
+                round = Math.max.apply(null, arr);
                 // if data haven't been loaded yet 
                 if(dataLoaded == false){
-                    for (let i = 1; i < data[0].score.length; i++){
+                    for (let i = 1; i < round; i++){
                         append(i+1);
                     }
                     display(data);
