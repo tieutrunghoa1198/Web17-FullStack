@@ -71,10 +71,6 @@ $(document).ready(function() {
                 else if(dataLoaded){
                     display(data);
                 }
-                // display a new game has been created recently 
-                else {
-                    display(data);
-                }
             },
             error: function(err) {
                 console.log(err);
