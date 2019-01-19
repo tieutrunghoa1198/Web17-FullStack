@@ -59,7 +59,7 @@ $(document).ready(function() {
                 data_global = data;
                 db = DB;
                 round = data[0].score.length;
-                // if there is more than 1 round and data haven't been loaded yet 
+                // if there are more than 1 round and data haven't been loaded yet 
                 if(data[0].score.length > 0 && dataLoaded == false){
                     for (let i = 1; i < data[0].score.length; i++){
                         append(i+1);
