@@ -1,19 +1,39 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const app = express();
-const port = 9000;
+// router
 const UserApi = require('./routers/userApi');
-// end of import 
-app.use('/api/user', UserApi);
-app.use(bodyParser.urlencoded({ extended: false}));
+const PostApi = require('./routers/postApi');
+const AuthApi = require('./routers/authApi');
+const app = express();
+// connect db 
+mongoose.connect('mongodb://localhost:27017/tkhotgirl', {useNewUrlParser: true},(err)=>{
+    if(err){
+        console.log("Kết nối lỗi");
+    }else{
+        console.log("Kết nối thành công");
+    }
+});
+// body parrse
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-mongoose.connect('mongodb://localhost/tk-hotgirls',{ useNewUrlParser: true }, (err) => {
-    if(err) console.log(err);
-    else console.log('DB connect success');
-})
-// end of use 
-app.listen(port, (err) => {
-    if(err) console.log(err);
-    else console.log('listening at port ' + port);
-})
+app.use('/api/user',UserApi);
+app.use('/api/post',PostApi);
+app.use('/api/auth',AuthApi);
+
+
+
+
+
+
+
+app.use("/public", express.static("public"));
+// open connect server
+app.listen(3000,(err)=>{
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log("Server start success!");
+    }
+});

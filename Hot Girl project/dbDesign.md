@@ -1,14 +1,13 @@
-- User: 
-    - username: 
-    - password: 
-    <!-- - permission: -->
-    - avatar: 
-- Post: 
-    - img: 
-    - description: 
-    - like:
-    - title: 
-    - comment: 
-    - view: 
-    - date:
-    - author:  
+ - Uses:
+    - Username
+    - Password
+    - Avatar
+ - Posts:
+    - Picture
+    - Desciption
+    - Like
+    - Title
+    - Comment
+    - Views
+    - Date
+    - Auther
